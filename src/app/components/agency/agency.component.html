@@ -1,0 +1,16 @@
+<div ngClass="listdiv" >
+  <dl>
+    <dd *ngFor="let item of agencyList"  class="col-md-4 col-sm-4 col-lg-4"
+        (click)="onItemClick(item)" style="height: 55px;margin-top: 5px">
+      {{item.title}}
+      <br>
+      <div class="row" style="margin-bottom: 10px">
+        <div class="col">创建时间：{{item.receivetime}}</div>
+
+        <div class="col"> {{item.typeName}}</div>
+      </div>
+      <div style="background-color: antiquewhite;height: 1px;"></div>
+    </dd>
+  </dl>
+</div>
+
